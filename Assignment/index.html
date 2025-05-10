@@ -14,37 +14,53 @@
       </h3>
 
       <div class="content-wrapper">
+
+        
         <header class="header">
-          <img src="assets/Mask group.svg" alt="My Image" />
-          <ul class="nav-menu">
-            <li class="nav-item">Home</li>
-            <li class="nav-item nav-dropdown">
-              <span>Shop</span>
-              <img src="assets/Vector.png" alt=">" class="arrow-icon" />
-            </li>
-            <li class="nav-item">Elements</li>
-            <li class="nav-item">About Us</li>
-            <li class="nav-item">Blog</li>
-            <li class="nav-item">Contact</li>
-          </ul>
-          <div class="header-right">
-            <img
-              src="assets/search-icon.png"
-              alt="Search Icon"
-              class="search-icon"
-            />
-            <div class="cta-button">
-              <h1 class="cta-text">
-                Try Alcami
-                <img
-                  src="assets/Arrow 17.svg"
-                  alt="Arrow"
-                  class="arrow-icon-sm"
-                />
-              </h1>
-            </div>
-          </div>
-        </header>
+    <img src="assets/Mask group.svg" alt="My Image" />
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-menu">
+      <li class="nav-item">Home</li>
+      <li class="nav-item nav-dropdown">
+        <span>Shop</span>
+        <img src="assets/down.svg" alt=">" class="arrow-icon" />
+      </li>
+      <li class="nav-item">Elements</li>
+      <li class="nav-item">About Us</li>
+      <li class="nav-item">Blog</li>
+      <li class="nav-item">Contact</li>
+    </ul>
+
+    <div class="header-right">
+      <img
+        src="assets/search.svg"
+        alt="Search Icon"
+        class="search-icon"
+        
+      />
+
+      <div class="search-box hidden">
+        <input type="text" placeholder="Search for product..." class="search-input" />
+      </div>
+
+      <div class="cta-button">
+        <h1 class="cta-text">
+          Try Alcami
+          <img
+            src="assets/Arrow 17.svg"
+            alt="Arrow"
+            class="arrow-icon-sm"
+          />
+        </h1>
+      </div>
+    </div>
+  </header>
 
         <div class="hero-section">
           <div class="hero-left">
@@ -1768,6 +1784,23 @@
           panel.style.maxHeight = panel.scrollHeight + "px";
         }
       });
+
+
+
+       
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const searchIcon = document.querySelector('.search-icon');
+    const searchBox = document.querySelector('.search-box');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    searchIcon.addEventListener('click', () => {
+      searchBox.classList.toggle('hidden');
+    });
+  
     </script>
   </body>
 </html>
