@@ -14,53 +14,54 @@
       </h3>
 
       <div class="content-wrapper">
-
-        
         <header class="header">
-    <img src="assets/Mask group.svg" alt="My Image" />
+          <img src="assets/Mask group.svg" alt="My Image" />
 
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-    <ul class="nav-menu">
-      <li class="nav-item">Home</li>
-      <li class="nav-item nav-dropdown">
-        <span>Shop</span>
-        <img src="assets/down.svg" alt=">" class="arrow-icon" />
-      </li>
-      <li class="nav-item">Elements</li>
-      <li class="nav-item">About Us</li>
-      <li class="nav-item">Blog</li>
-      <li class="nav-item">Contact</li>
-    </ul>
+          <ul class="nav-menu">
+            <li class="nav-item">Home</li>
+            <li class="nav-item nav-dropdown">
+              <span>Shop</span>
+              <img src="assets/down.svg" alt=">" class="arrow-icon" />
+            </li>
+            <li class="nav-item">Elements</li>
+            <li class="nav-item">About Us</li>
+            <li class="nav-item">Blog</li>
+            <li class="nav-item">Contact</li>
+          </ul>
 
-    <div class="header-right">
-      <img
-        src="assets/search.svg"
-        alt="Search Icon"
-        class="search-icon"
-        
-      />
+          <div class="header-right">
+            <img
+              src="assets/search.svg"
+              alt="Search Icon"
+              class="search-icon"
+            />
 
-      <div class="search-box hidden">
-        <input type="text" placeholder="Search for product..." class="search-input" />
-      </div>
+            <div class="search-box hidden">
+              <input
+                type="text"
+                placeholder="Search for product..."
+                class="search-input"
+              />
+            </div>
 
-      <div class="cta-button">
-        <h1 class="cta-text">
-          Try Alcami
-          <img
-            src="assets/Arrow 17.svg"
-            alt="Arrow"
-            class="arrow-icon-sm"
-          />
-        </h1>
-      </div>
-    </div>
-  </header>
+            <div class="cta-button">
+              <h1 class="cta-text">
+                Try Alcami
+                <img
+                  src="assets/Arrow 17.svg"
+                  alt="Arrow"
+                  class="arrow-icon-sm"
+                />
+              </h1>
+            </div>
+          </div>
+        </header>
 
         <div class="hero-section">
           <div class="hero-left">
@@ -488,9 +489,6 @@
       </div>
     </div>
 
-
-
-    
     <div class="containers">
       <div class="product-container">
         <div class="product-gallery">
@@ -649,7 +647,6 @@
                       src="https://cdn.shopify.com/s/files/1/0620/9329/5831/files/group_1000004300__1.webp?v=1743002644height=200&width=200"
                       alt="Product 1"
                     />
-                  
                   </div>
                 </div>
               </div>
@@ -973,23 +970,23 @@
 
     <div class="stats-container">
       <div class="stat-block">
-        <h1 class="stat-value">84%</h1>
+        <h1 class="stat-value" data-target="84">0%</h1>
         <h1 class="stat-description">
           Reported increased energy throughout their day
         </h1>
       </div>
       <div class="stat-block">
-        <h1 class="stat-value">78%</h1>
+        <h1 class="stat-value" data-target="78">0%</h1>
         <h1 class="stat-description">Reported feeling more focused</h1>
       </div>
       <div class="stat-block">
-        <h1 class="stat-value">89%</h1>
+        <h1 class="stat-value" data-target="89">0%</h1>
         <h1 class="stat-description">
           Reported a sense of calmness & steady mood
         </h1>
       </div>
       <div class="stat-block">
-        <h1 class="stat-value">90%</h1>
+        <h1 class="stat-value" data-target="90">0%</h1>
         <h1 class="stat-description">
           Reported feeling an overall increased wellness in their gut skin,
           hair, and physical health
@@ -1619,7 +1616,7 @@
           <div class="accordion-item">
             <button class="accordion">
               <span>What payment methods are accepted?</span>
-              <span class="icon">+</span>
+              <span class="accordin-icon">+</span>
             </button>
             <div class="panel">
               <p>We accept all major credit/debit cards, PayPal, and UPI.</p>
@@ -1642,7 +1639,7 @@
         padding-top: 80px;
         padding-left: 40px; /* Add extra padding to the left */
         padding-right: 40px; /* Add extra padding to the right */
-        border-radius: 15px;
+        border-radius: 50px;
         display: flex;
         justify-content: center;
         align-items: start;
@@ -1770,37 +1767,6 @@
       </div>
     </footer>
 
-
-    <script>
-      const acc = document.querySelector(".accordion");
-      const panel = document.querySelector(".panel");
-
-      acc.addEventListener("click", function () {
-        this.classList.toggle("active");
-
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-
-
-
-       
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    const searchIcon = document.querySelector('.search-icon');
-    const searchBox = document.querySelector('.search-box');
-
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-
-    searchIcon.addEventListener('click', () => {
-      searchBox.classList.toggle('hidden');
-    });
-  
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
